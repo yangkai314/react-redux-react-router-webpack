@@ -1,0 +1,12 @@
+.header{
+  font-size: 50px;color: #999;position: relative;
+  a{
+    color: #e4393c;font-size: 20px;
+  }
+}
+.nav{
+  a{
+    color: #333;
+    &.active{color: #e4393c;}
+  }
+}
