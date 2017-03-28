@@ -11,9 +11,11 @@
 > 快速开始
 
 ```
-$ npm install
+$ npm install                   #国内请使用淘宝镜像cnpm安装
 $ npm start                     #启动程序并开启热替换
+$ npm start:express             #使用express启动程序并编译源代码产至dist目录
 $ npm run release               #编译源代码产至dist目录
+$ npm run release:w             #监听文件变化自动编译源代码产至dist目录
 ```
 
 > 技术栈
@@ -32,6 +34,7 @@ webpack+es6+react+sass
     ├──pages                    #页面
         ├──page1                #单个页面，命名可根据实际开发命名
         ...
+    ├──redux                    #redux
     ├──index.html               #项目入口html
     ├──index.js                 #项目入口js
 ```
@@ -75,4 +78,9 @@ webpack+es6+react+sass
 > 2017.3.21
 ```
 添加redux管理数据.新增一个counter的状态管理的小例子
+```
+
+> 2017.3.28
+```
+新增命令 release:w（自动打包）
 ```

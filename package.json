@@ -34,7 +34,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node config/webpack.dev.js --hot",
     "release": "node config/webpack.release.js",
-    "start:express": "npm run release && node server/server.js"
+    "start:express": "npm run release && node server/server.js",
+    "release:w":"webpack --config config/webpack.config.js --watch"
   },
   "keywords": [
     "react",
